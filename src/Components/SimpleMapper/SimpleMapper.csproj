@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>SimpleMapper.snk</AssemblyOriginatorKeyFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageIconUrl>https://rolosoft.blob.core.windows.net/common/rolosoft128x128.png</PackageIconUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageReleaseNotes>Updated to .NET standard. Migrated repo to GitHub.</PackageReleaseNotes>
+    <PackageTags>Mapping SimpleMapper</PackageTags>
+    <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+    <Description>SimpleMapper is built from the ground up with performance and modern testability software practices in mind. It is light-weight tool for mapping between objects across software tiers. Efficient data tier mapping is achieved using LINQ projection whilst in-memory mappings can be defined by implementing the IMapper&lt;TIn, TOut&gt; interface.</Description>
+    <Authors>Rolosoft</Authors>
+    <Company>Rolosoft</Company>
+    <Copyright>Copyright © Rolosoft 2017</Copyright>
+    <PackageProjectUrl>https://github.com/Rolosoft/simplemapper</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Rolosoft/simplemapper</RepositoryUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard1.4\SimpleMapper.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard1.4\SimpleMapper.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="stylecop.json" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Jetbrains.Annotations" Version="10.4.0">
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="1.1.2" />
+    <PackageReference Include="Simplemapper.Core" Version="1.1.0" />
+    <PackageReference Include="Stylecop.Analyzers" Version="1.0.2">
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="System.Linq.Queryable" Version="4.3.0" />
+    <PackageReference Include="System.Reflection" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>
