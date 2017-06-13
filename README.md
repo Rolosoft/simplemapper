@@ -1,6 +1,6 @@
 # SimpleMapper
 
-
+[![rolosoft_public_packages MyGet Build Status](https://www.myget.org/BuildSource/Badge/rolosoft_public_packages?identifier=a3bd8d82-142b-45aa-af8f-da7486b6a371)](https://www.myget.org/)
 
 ## About
 SimpleMapper is built from the ground up with performance and modern testability software practices in mind.
